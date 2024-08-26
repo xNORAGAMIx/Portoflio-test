@@ -32,17 +32,18 @@ const SkillWheel = () => {
     }
   }, []);
   const data = {
-    labels: ["JavaScript", "React", "Node.js", "CSS", "Blockchain"],
+    labels: ["JavaScript", "React", "Node.js", "Java", "Tailwind", "MongoDB"],
     datasets: [
       {
         label: "Skills",
-        data: [30, 25, 20, 15, 10],
+        data: [15, 25, 20, 15, 10, 15],
         backgroundColor: [
           "rgba(255, 99, 132, 0.8)",
           "rgba(54, 162, 235, 0.8)",
           "rgba(255, 206, 86, 0.8)",
           "rgba(75, 192, 192, 0.8)",
           "rgba(153, 102, 255, 0.8)",
+          "rgba(105, 56, 255, 0.8)",
         ],
         borderColor: [
           "rgba(255, 99, 132, 1)",
@@ -50,6 +51,7 @@ const SkillWheel = () => {
           "rgba(255, 206, 86, 1)",
           "rgba(75, 192, 192, 1)",
           "rgba(153, 102, 255, 1)",
+          "rgba(105, 56, 255, 1)",
         ],
         borderWidth: 4,
       },

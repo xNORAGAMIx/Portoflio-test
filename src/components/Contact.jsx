@@ -1,16 +1,15 @@
 const Contact = () => {
   return (
     <div id="contact">
-      <section className="body-font relative text-gray-100">
-        <div className="container mx-auto px-5 py-24">
+      <section className="body-font relative text-white">
+        <div className="container mx-auto px-5 py-12">
           <div className="mb-12 flex w-full flex-col text-center">
-            <h1 className="title-font mb-4 text-2xl font-medium text-white sm:text-3xl">
-              Contact Us
+            <h1 className="mb-4 lg:text-4xl font-bold text-white sm:text-3xl">
+              Contact
             </h1>
-            <p className="mx-auto text-base leading-relaxed lg:w-2/3">
-              Feel free to reach out to us! Whether you have a question,
-              feedback, or a collaboration proposal, we&apos;d love to hear from
-              you.
+            <p className="mx-auto sm:text-xl font-thin  lg:w-2/3">
+              Feel free to reach out! Whether you have a question, feedback, or
+              a collaboration proposal, we&apos;d love to hear from you.
             </p>
           </div>
 
@@ -68,7 +67,7 @@ const Contact = () => {
               </div>
               <div className="w-full p-2">
                 <button className="mx-auto flex rounded border-0 bg-indigo-500 py-2 px-8 text-lg text-white hover:bg-indigo-600 focus:outline-none">
-                  Button
+                  Send
                 </button>
               </div>
 
@@ -124,16 +123,15 @@ const Contact = () => {
                       <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
                     </svg>
                   </a>
-                  <a className="ml-4 text-black">
+                  <a className="ml-4 text-black" href="https://www.linkedin.com/in/manas-d-552168146/" target="_blank">
                     <svg
-                      fill="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      className="h-5 w-5"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
                       viewBox="0 0 24 24"
+                      className="h-5 w-5"
                     >
-                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                     </svg>
                   </a>
                 </span>

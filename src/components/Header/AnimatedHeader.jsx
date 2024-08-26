@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import logo from "../../assets/logo.png";
 
 const AnimatedHeader = () => {
   const textRef = useRef(null);
@@ -36,13 +37,7 @@ const AnimatedHeader = () => {
 
   return (
     <div className="relative inline-block">
-      <h1 ref={textRef} className="font-bold text-4xl">
-        NORAGAMI
-        <span
-          ref={underlineRef}
-          className="absolute bottom-0 left-0 h-1 bg-white w-full transform origin-left"
-        ></span>
-      </h1>
+      <img ref={textRef} src={logo} alt="" className="w-16" />
     </div>
   );
 };

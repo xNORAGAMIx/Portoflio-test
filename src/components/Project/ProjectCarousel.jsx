@@ -49,7 +49,7 @@ const ProjectCarousel = () => {
 
   return (
     <div id="projects">
-      <h1 className="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-12 uppercase underline font-bold">
+      <h1 className="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-12  font-bold">
         Projects
       </h1>
       <div className="flex justify-evenly items-center">

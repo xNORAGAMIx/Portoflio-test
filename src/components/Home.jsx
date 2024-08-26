@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { TextPlugin } from "gsap/TextPlugin";
+import coder from "../assets/coder.jpeg";
 
 gsap.registerPlugin(TextPlugin);
 
@@ -14,6 +15,7 @@ const Home = () => {
   useEffect(() => {
     const headingText = "Hello, I'm";
     const subheadingText = "Manas Das";
+    const avatarElement = imageRef.current
 
     gsap.fromTo(
       headingRef.current,
@@ -56,6 +58,13 @@ const Home = () => {
       { scale: 0.8, opacity: 0 },
       { scale: 1, opacity: 1, duration: 1, delay: 2.5, ease: "power2.out" }
     );
+
+    avatarElement.addEventListener("mouseenter", () => {
+      gsap.to(avatarElement, { scale: 1.1, duration: 0.5 });
+    });
+    avatarElement.addEventListener("mouseleave", () => {
+      gsap.to(avatarElement, { scale: 1, duration: 0.5 });
+    });
   }, []);
 
   return (
@@ -102,7 +111,7 @@ const Home = () => {
       <div className="w-full md:w-1/2 flex justify-center md:justify-end">
         <img
           ref={imageRef}
-          src="https://images.unsplash.com/photo-1531040630173-7cfb894c8eaa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D"
+          src={coder}
           alt="Profile"
           className="object-cover w-64 h-64 md:w-96 md:h-96 rounded-full"
         />
