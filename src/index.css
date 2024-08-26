@@ -3,10 +3,19 @@
 @tailwind utilities;
 
 .timeline-item {
-  @apply p-4 mb-4 bg-gray-100 rounded-lg shadow-lg;
+  @apply p-4 mb-4 bg-black rounded-lg shadow-lg;
 }
 
 .no-scrollbar {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.avatar-container {
+  @apply flex justify-center items-center mt-8;
+}
+
+.avatar {
+  @apply w-32 h-32 rounded-full; /* Adjust the size and make it circular */
+}
+

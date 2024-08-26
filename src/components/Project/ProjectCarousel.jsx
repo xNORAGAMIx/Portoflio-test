@@ -48,7 +48,7 @@ const ProjectCarousel = () => {
   const currentProjects = projects.slice(currentIndex, currentIndex + 3);
 
   return (
-    <div id="project">
+    <div id="projects">
       <h1 className="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-12 uppercase underline font-bold">
         Projects
       </h1>
